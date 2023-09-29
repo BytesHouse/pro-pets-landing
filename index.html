@@ -4,21 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pro-Pets</title>
-    <link rel="stylesheet" href="./Styles/normalize.css">
-    <link rel="stylesheet" href="./Styles/header.css" />
+    <link rel="stylesheet" href="./Styles/index.css">
   </head>
   <body>
     <div id="root">
       <div class="wrapper">
         <header class="header">
-          <div class="header_mobile">
+          <div class="header_mobile header_nav container">
             <img src="./Images/Logo.svg" alt="logo" />
-            <button class="burger"></button>
+            <div class="burger"></div>
           </div>
-          <div class="header_desktop">
+          <div class="header_desktop header_nav container">
             <img src="./Images/Logo.svg" alt="logo" />
             <nav>
-              <ul>
+              <ul class="navigation-list">
                 <li>
                   <a href="/">Home</a>
                 </li>
@@ -40,7 +39,7 @@
               </ul>
             </nav>
             <div class="language_switcher">
-              ru
+              <p>RU</p>
               <svg
                 width="8"
                 height="5"
@@ -50,11 +49,31 @@
               >
                 <path
                   d="M0.699847 1.7C0.383181 1.38333 0.312181 1.021 0.486848 0.613C0.661515 0.205 0.974181 0.000666377 1.42485 -2.70206e-07L6.57485 -4.50926e-08C7.02485 -2.54225e-08 7.33751 0.204333 7.51285 0.613C7.68818 1.02167 7.61718 1.384 7.29985 1.7L4.69985 4.3C4.59985 4.4 4.49151 4.475 4.37485 4.525C4.25818 4.575 4.13318 4.6 3.99985 4.6C3.86651 4.6 3.74151 4.575 3.62485 4.525C3.50818 4.475 3.39985 4.4 3.29985 4.3L0.699847 1.7Z"
-                  fill="white"
+                  fill="#005546"
                 />
               </svg>
+              <div class="drop_language">
+                <p>EN</p>
+                <p>UA</p>
+                <p>MD</p>
+              </div>
             </div>
             <button class="button_primary">Sing Up for Free</button>
+          </div>
+          <div class="action_block container">
+            <div class="action_info">
+              <h1>Welcome to your
+                <span>Pawfessional</span> community!</h1>
+              <h2>Our fluffy space for lovers, admirers, dads and moms of our four-legged, winged, tailed guys.</h2>
+              <div class="action_buttons">
+                <button id="lost">I Lost a pet</button>
+                <button id="found">I Found a pet</button>
+              </div>
+              <p>I’m okay, just want to <a id="auth" href="">JOIN</a> the pawsome community!</p>
+            </div>
+            <div class="image_wrapper">
+              <img src="./Images/cat-woman.png" alt="Woman with cat">
+            </div>
           </div>
         </header>
         <main>
